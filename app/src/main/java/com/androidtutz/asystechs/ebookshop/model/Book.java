@@ -1,18 +1,18 @@
 package com.androidtutz.asystechs.ebookshop.model;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.ForeignKey;
-import android.arch.persistence.room.PrimaryKey;
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
 
 
 import com.androidtutz.asystechs.ebookshop.BR;
 
 import java.util.Objects;
 
-import static android.arch.persistence.room.ForeignKey.CASCADE;
+import static androidx.room.ForeignKey.CASCADE;
 
 @Entity(tableName = "books_table",foreignKeys = @ForeignKey(entity = Category.class,
         parentColumns = "id",childColumns = "category_id",onDelete = CASCADE))

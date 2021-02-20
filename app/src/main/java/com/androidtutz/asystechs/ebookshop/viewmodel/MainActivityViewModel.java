@@ -1,10 +1,8 @@
 package com.androidtutz.asystechs.ebookshop.viewmodel;
 
-import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.androidtutz.asystechs.ebookshop.model.Book;
 import com.androidtutz.asystechs.ebookshop.model.Category;
